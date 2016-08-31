@@ -1,5 +1,5 @@
 /*
- * x/can.h
+ * x/lib/can.h
  *
  * Definitions for CAN network layer (socket addr / CAN frame / CAN filter)
  *
