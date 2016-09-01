@@ -1,0 +1,1 @@
+To build use `gcc -o scx test.c`.

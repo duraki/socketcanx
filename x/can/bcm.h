@@ -30,12 +30,12 @@ struct bcm_timeval {
  * @frames:    array of CAN frames.
  */
 struct bcm_msg_head {
-	__s32 opcode;
-	__s32 flags;
-	__s32 count;
+	__u32 opcode;
+	__u32 flags;
+	__u32 count;
 	struct bcm_timeval ival1, ival2;
 	canid_t can_id;
-	__s32 nframes;
+	__u32 nframes;
 	struct can_frame frames[0];
 };
 

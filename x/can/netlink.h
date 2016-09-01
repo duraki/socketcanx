@@ -5,32 +5,32 @@
 
 /* CAN bit-timing params from can specs */
 struct can_bittiming {
-	__s32 bitrate;
-	__s32 sample_point;
-	__s32 tq;
-	__s32 prop_seg;
-	__s32 phase_seg1;
-	__s32 phase_seg2;
-	__s32 sjw;
-	__s32 brp;
+	__u32 bitrate;
+	__u32 sample_point;
+	__u32 tq;
+	__u32 prop_seg;
+	__u32 phase_seg1;
+	__u32 phase_seg2;
+	__u32 sjw;
+	__u32 brp;
 };
 
 /* CAN hardware-dependent bit-timing constant */
 struct can_bittiming_const {
 	char name[16];
-	__s32 tseg1_mix;
-	__s32 tsef1_max;
-	__s32 tseg2_min;
-	__s32 tseg2_max;
-	__s32 sjw_max;
-	__s32 brp_min;
-	__s32 brp_max;
-	__s32 brp_inc;
+	__u32 tseg1_mix;
+	__u32 tsef1_max;
+	__u32 tseg2_min;
+	__u32 tseg2_max;
+	__u32 sjw_max;
+	__u32 brp_min;
+	__u32 brp_max;
+	__u32 brp_inc;
 };
 
 /* CAN clock params */
 struct can_clock {
-	__s32 freq;
+	__u32 freq;
 };
 
 /* CAN ops and state */
@@ -52,8 +52,8 @@ struct can_berr_counter {
 
 /* CAN controller mode */
 struct can_ctrlmode {
-	__s32 mask;
-	__s32 flags;
+	__u32 mask;
+	__u32 flags;
 };
 
 #define CAN_CTRLMODE_LOOPBACK		0x01
@@ -67,12 +67,12 @@ struct can_ctrlmode {
 
 /* CAN device statistics */
 struct can_device_stats {
-	__s32 bus_error;
-	__s32 error_warning;
-	__s32 error_passive;
-	__s32 bus_off;
-	__s32 arbitration_lost;
-	__s32 restarts;
+	__u32 bus_error;
+	__u32 error_warning;
+	__u32 error_passive;
+	__u32 bus_off;
+	__u32 arbitration_lost;
+	__u32 restarts;
 };
 
 /* CAN netlink interface */

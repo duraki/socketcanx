@@ -34,7 +34,7 @@
  * bit 30	/ remote transmission request flag (1 = rtr frame)
  * bit 31	/ frame format flag (0 = standard 11-bit, 1 = extended 29-bit)
  */
-typedef __s32 canid_t;
+typedef __u32 canid_t;
 
 #define CAN_SFF_ID_BITS		11
 #define CAN_EFF_ID_BITS		29
@@ -45,7 +45,7 @@ typedef __s32 canid_t;
  * bit 0-28		/ error class mask
  * bit 29-31	/ set to zero
  */
-typedef __s32 can_err_mask_t;
+typedef __u32 can_err_mask_t;
 
 /* CAN payload length and DLC definitions according to ISO 11898-1 */
 // http://www.iso.org/iso/catalogue_detail.htm?csnumber=63648
